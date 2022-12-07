@@ -5,11 +5,16 @@ const ARM_LEFT = (<div style={{ width: "100px", height: "10px", background: "bla
 const LEG_RIGHT = (<div style={{ width: "120px", height: "10px", background: "black", position: "absolute", top: "210px", right: "-110px", rotate: "60deg", transformOrigin: "left bottom" }} />)
 const LEG_LEFT = (<div style={{ width: "120px", height: "10px", background: "black", position: "absolute", top: "210px", right: "0", rotate: "-60deg", transformOrigin: "right bottom" }} />)
 
+const BODY_PARTS = [HEAD, BODY, ARM_LEFT, ARM_RIGHT, LEG_LEFT, LEG_RIGHT];
 
-export default function HangmanDrawing() {
+type HangmanDrawingProps = {
+    numberOfGuesses: number
+}
+
+export default function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
 
     return <div style={{ position: "relative" }}>
-        {HEAD}{BODY}{ARM_LEFT}{ARM_RIGHT}{LEG_RIGHT}{LEG_LEFT}
+        {BODY_PARTS.slice(0, numberOfGuesses)}
         {/* Hanging bar */}
         <div style={{ height: "50px", width: "10px", background: "black", position: "absolute", top: "0", right: "0" }} />
 
