@@ -1,5 +1,8 @@
 import { useState } from "react";
 import words from "../utility/wordlist.json";
+import HangmanDrawing from "./HangmanDrawing";
+import HangmanKeyboard from "./HangmanKeyboard";
+import HangmanWord from "./HangmanWord";
 
 const GetRandomWord = () => {
     return words[Math.floor(Math.random() * words.length)]
@@ -21,8 +24,9 @@ export default function Hangman() {
             <div style={{ fontSize: "2rem", textAlign: "center" }}>
                 Lose / Win
             </div>
-
-            Hangman
+            <HangmanDrawing />
+            <HangmanWord />
+            <HangmanKeyboard />
         </div>
     )
 }
