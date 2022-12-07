@@ -26,7 +26,9 @@ export default function Hangman() {
             </div>
             <HangmanDrawing />
             <HangmanWord />
-            <HangmanKeyboard />
+            <div style={{ alignSelf: "stretch" }} >
+                <HangmanKeyboard />
+            </div>
         </div>
     )
 }
