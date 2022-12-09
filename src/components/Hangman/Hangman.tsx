@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import words from "../../utility/wordlist.json";
+import words from "../../utility/Hangman/wordlist.json";
 import HangmanDrawing from "./HangmanDrawing";
 import HangmanKeyboard from "./HangmanKeyboard";
 import HangmanWord from "./HangmanWord";
