@@ -1,11 +1,12 @@
-import Hangman from "./components/Hangman/Hangman"
+import Main from "./components/Main/Main";
+import Hangman from "./components/Hangman/Hangman";
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
-      <Hangman />
+      <Main />
+      {/* <Hangman /> */}
     </div>
   )
 }
