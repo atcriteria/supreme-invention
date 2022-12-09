@@ -40,7 +40,7 @@ export default function Hangman() {
         return () => {
             document.removeEventListener("keypress", handler);
         }
-    }, [])
+    }, [guessedLetters])
 
     useEffect(() => {
         const handler = (e: KeyboardEvent) => {
