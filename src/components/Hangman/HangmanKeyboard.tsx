@@ -1,4 +1,4 @@
-import KEYS from "../utility/keys.json";
+import KEYS from "../../utility/keys.json";
 import styles from "./HangmanKeyboard.module.css";
 
 type KeyboardProps = {

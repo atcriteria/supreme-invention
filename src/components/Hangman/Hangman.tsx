@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import words from "../utility/wordlist.json";
+import words from "../../utility/wordlist.json";
 import HangmanDrawing from "./HangmanDrawing";
 import HangmanKeyboard from "./HangmanKeyboard";
 import HangmanWord from "./HangmanWord";
@@ -69,8 +69,8 @@ export default function Hangman() {
             alignItems: "center"
         }}>
             <div style={{ fontSize: "2rem", textAlign: "center" }}>
-                {isWinner && "Winner! - Refresh to tru again"}
-                {isLoser && "Loser! - Refresh to tru again"}
+                {isWinner && "Winner! - Press 'Enter' to try again"}
+                {isLoser && "You lost! - Press 'Enter' to try again"}
             </div>
             <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
             <HangmanWord reveal={isLoser} guessedLetters={guessedLetters} wordToGuess={wordToGuess} />

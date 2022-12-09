@@ -1,4 +1,4 @@
-import Hangman from "./components/Hangman"
+import Hangman from "./components/Hangman/Hangman"
 
 function App() {
 
